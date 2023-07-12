@@ -1,5 +1,8 @@
 # InfiniteScroll-and-Isotope-Example
+IMPORTANT: Infinite Scroll will not work when opened locally, it must be hosted with a local http server. You can host one with this site with node.js or visual studio code live server extension.
 A clearer example of a website containing the InfiniteScroll and Isotope JS Plugin made by metafizzy in vanilla JavaScript.
+
+InfiniteScroll appends posts from another page without having a backend, mansonry is for the layout for the posts similar to pinterest (like bricklaying), isotope can sort and filter the posts and finally imagesLoaded will makes sure the images are loaded first before the InfiniteScroll appends them.
 
 This example uses: 
         
