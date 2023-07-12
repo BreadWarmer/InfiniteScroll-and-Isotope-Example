@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- For viewing on multiple devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to StyleSheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Link to InfiniteScroll JavaScript Plugin -->
+    <script src="infinite-scroll.pkgd.js"></script>
+
+    <!-- Link to Isotope JavaScript Plugin with includes the Masonry Plugin -->
+    <script src="isotope.pkgd.js"></script>
+
+    <title>Infinite Scroll with Isotope/Masonry Example</title>
+</head>
+<body>
+    <!-- IMPORTANT: Infinite Scroll will not work when opened locally, it must be hosted with a local http server. You can host one with this site with node.js or visual studio code live server extension.-->
+
+    <!--
+        This example uses: 
+        
+        - Infinite Scroll JavaScript plugin by metafizzy (Another plugin called imagesLoaded is included with the InfiniteScroll plugin)
+        https://infinite-scroll.com/
+        https://imagesloaded.desandro.com/
+
+        - Isotope JavaScript Plugin by metafizzy (Isotope also includes Masonry in their JavaScript File)
+        https://isotope.metafizzy.co/
+        https://masonry.desandro.com/
+
+        They can be initialized by JavaScript, JQuery or CDN (Content Delivery Network)
+        This isn't perfect and I recommend to use the JQuery version as it's much more supported with the official guides.
+        For simplicity, I will use the JavaScript files.
+
+        I will use images from 1.png 2.png 3.png 4.png as example images for this example
+    -->
+
+    <!-- 
+        Infinite Scroll works on a container element with item elements.
+        <div class="container">
+            <article class="post">...</article>
+            <article class="post">...</article>
+            <article class="post">...</article>
+            ...
+        </div>
+    -->
+
+    <!-- 
+        You can add posts with varied widths and heights by add CSS to it.
+        <div class="container">
+            <article class="post">...</article>
+            <article class="post width2">...</article>
+            <article class="post width3">...</article>
+        </div>
+    -->
+
+    <div class="container">
+
+        <article class="post">
+            <img src="images\1.png">
+        </article>
+
+        <article class="post">
+            <img src="images\2.png">
+        </article>
+
+        <article class="post">
+            <img src="images\3.png">
+        </article>
+
+        <article class="post">
+            <img src="images\4.png">
+        </article>
+
+    </div>
+
+    <!-- This determines with page is next to load, in this case it would be the file 50 under the page folder. -->
+    <a class="pagination__next" href="page\50"></a>
+
+    <!-- 
+        This specific script has to be place at the end of the HTML Infinite Scroll Code instead of above the Infinite Scroll code otherwise it will fail to load the plugin.
+        This script initializes the Infinite Scroll Plugin.
+    -->
+    <script src="script.js"></script>
+
+    <!-- BUGS: For some reason, video files can overlap with the other posts. This could be avoided by specifying the post item height in the html tags, wrapping the isotope javascript initialization in the imagesLoaded initialization or using isotope to add a sort by original order at the end of every container div -->
+    
+</body>
+</html>

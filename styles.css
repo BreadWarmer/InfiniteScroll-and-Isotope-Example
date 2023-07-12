@@ -1,0 +1,25 @@
+/* CSS for images and videos, I set it at 98% to leave gaps */ 
+
+img, video {
+    width: 98%;
+    height: 98%;
+}
+
+/* CSS for normal post item */
+
+.post {
+    float: left;
+    width: 33%;
+    height: auto;
+}
+
+/* CSS for wider post items */
+/* You can use these CSS to create a more responsive website layout */
+
+.width2 {
+    width: 66%;
+}
+
+.width3 {
+    width: 100%
+}
