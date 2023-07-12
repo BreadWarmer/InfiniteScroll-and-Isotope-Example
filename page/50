@@ -1,0 +1,23 @@
+
+    <div class="container">
+
+        <article class="post width2">
+            <img src="images\5.png">
+        </article>
+
+        <article class="post">
+            <img src="images\6.png">
+        </article>
+
+        <article class="post">
+            <img src="images\7.png">
+        </article>
+
+        <article class="post">
+            <img src="images\8.png">
+        </article>
+
+    </div>
+
+    <!-- IMPORTANT: For some reason, the reference (href) will not work but will instead append posts from this page +1, for example, starting at page 50, it will continue to 51, 52, 53, 54 etc regardless of what you put in the href in the pagination__next link -->
+    <a class="pagination__next" href="page\51"></a>
